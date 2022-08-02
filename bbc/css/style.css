@@ -6,7 +6,17 @@
 *{
   box-sizing: border-box;
 }
+body {
+  width: 90vw;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
 
+a {
+  text-decoration: none;
+  padding: 0.2rem 0;
+}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -16,8 +26,15 @@
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+html{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white; 
+}
+
 img{
-  height: 400px;
+  height: 40px;
+  position: relative;
+  z-index: 0;
 }
 /* HEADER*/
 header{
@@ -26,38 +43,101 @@ header{
   overflow: none;
   background-color: black;
   color: white;
+  font-size: 0.6em;
+  
+
+}
+
+header nav ul li img{
+  width: 10px;
+  height: 10px;
 }
 li {
-  display:inline-block
+  display:inline-block;
+  width: 8%
+  
 }
 header a{
   color: white;
+  text-decoration: none;
+  border-left: 1px white ;
+  border-right: 1px white;
 }
-
+header form{
+  width: 7%;
+}
 /* H1 and main*/
 
 h1{
-  font-size: 1.2em;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   padding: 1% 0 2% 2%;
   display: inline-block;
+  width: 50%;
+  color: black;
+}
+h2{
+  font-size: 1.2em;
+}
+p, span{
+  font-size:0.8em;
 }
 
 .date {
   color: gray;
-  font-size: 1.2em;
+  font-size: 1em;
   display: inline-block;
   padding: 2% 0 2% 2%;
-  float: right
+  margin-left: 20%;
 }
 
 main{
-  width: 50%;
+  width: 45%;
   background: black;
   color: white;
-  margin: 1% 1% 1% 2%;
+  margin: 1% 1% 1% 1%;
   display: inline-block;
+  background-image: "img/img.png";
+}
+main a{
+  color:white;
+  text-decoration: none;
 }
 
+aside{
+  position:absolute;
+  left:50%;
+  right:0%;
+  top: 20%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 45%;
+  height: 45%;
+}
 aside article{
-  display: inline-block;}
+  width: 50%;
+  background-image: "/img/img.png" ;
+}
+aside article h2{
+  font-size: 0.8em;
+}
+
+h3{
+  position: absolute;
+  top: 60%;
+  color:black
+}
+section{
+    display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  position: absolute;
+  top:70%
+}
+
+section article{
+  width: 30%;
+}
+
+
