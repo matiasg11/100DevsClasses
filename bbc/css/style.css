@@ -93,11 +93,12 @@ p, span{
 
 main{
   width: 45%;
-  background: black;
+  height: 75%;
+  background: url("../img/img.png") black;
   color: white;
   margin: 1% 1% 1% 1%;
-  display: inline-block;
-  background-image: "img/img.png";
+  display: flex;
+  
 }
 main a{
   color:white;
@@ -114,19 +115,26 @@ aside{
   justify-content: flex-end;
   width: 45%;
   height: 45%;
+  gap: 1%;
+
 }
 aside article{
-  width: 50%;
-  background-image: "/img/img.png" ;
+  width: 49%;
+  background: url("../img/img.png");
+  
 }
 aside article h2{
   font-size: 0.8em;
+  color:white;
 }
 
 h3{
   position: absolute;
   top: 60%;
   color:black
+}
+.news article span, .news article p{
+  color:black;
 }
 section{
     display: flex;
@@ -138,6 +146,7 @@ section{
 
 section article{
   width: 30%;
+  background: url("../img/img.png");
 }
 
 
