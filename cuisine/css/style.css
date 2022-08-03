@@ -12,22 +12,64 @@
 /*******************************************/
 .welcome, .discover, .cuisine, .hours, .customer{
   height:100vh;
+  background: linear-gradient(to right, lightgray, white);
+  border: 2% solid white;
 }
-.welcome>img{
-  position:absolute;
-  top:0px;
-  left:10%;
-}
-
-.welcome nav{}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 img{
-  height: 400px;
+  height: 25px;
 }
 
-.welcome img{
-  height:25px;
+
+.logo{
+    position:relative;
+    width: 10%;
+    height: 10%;
+    top:10px;
+    left:5%;
+    display:inline-block;
+  }
+.welcome nav{
+  display: inline;
+}
+.welcome nav ul{
+  position: relative;
+  margin-bottom: 15%;
+  right:0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 4%;
+}
+.welcome nav ul li{
+  list-style: none;
+  width:fit-content
+}
+
+.welcome h1{
+  font-size: 3em ;
+  font-weight: 900;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 60%;
+  margin: 5% 40% 5% 10%;
+
+}
+.welcome form{
+  margin: 5% 40% 5% 10%;
+}
+.welcome button{
+  background:orange;
+  color:white;
+}
+
+.welcome .socials{
+  margin: 5% 40% 5% 10%;
+  display:flex;
+  width: 40%;
+  justify-content: space-between;
+  font:bold  1.2em  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
