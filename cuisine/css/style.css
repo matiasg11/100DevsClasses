@@ -10,12 +10,24 @@
 /******************************************
 /* LAYOUT
 /*******************************************/
+.welcome, .discover, .cuisine, .hours, .customer{
+  height:100vh;
+}
+.welcome>img{
+  position:absolute;
+  top:0px;
+  left:10%;
+}
 
-
+.welcome nav{}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 img{
   height: 400px;
+}
+
+.welcome img{
+  height:25px;
 }
